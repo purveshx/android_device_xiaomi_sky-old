@@ -89,3 +89,6 @@ on property:ro.boot.boardid=S88029EA1
 
 on property:ro.boot.boardid=S88018PA1
         start vendor.nfc_hal_service
+
+# Set the swappiness value
+write /proc/sys/vm/swappiness 40
