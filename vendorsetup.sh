@@ -18,6 +18,11 @@ git clone https://github.com/xiaomi-sm4450-sky/android_vendor_xiaomi_sky.git -b 
 echo "Cloning firmware repository..."
 git clone https://codeberg.org/askthekaif/android_vendor_xiaomi_sky-firmware-af.git -b OS2.0.9.0.VMWEUXM vendor/xiaomi/sky-firmware
 
+# Clone the dolby repository
+echo "Cloning dolby hardware repository..."
+git clone https://github.com/Pong-Development/hardware_dolby.git -b 16 hardware/dolby
+sed -i '/version="1.0" type="device"/c\<manifest version="1.0" type="device" target-level="6">' "hardware/dolby/configs/vintf/vendor.dolby.media.c2@1.0-service.xml"
+
 # Clone the hardware repository
 echo "Cloning hardware repository..."
 git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-23.1 hardware/xiaomi
