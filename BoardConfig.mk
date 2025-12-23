@@ -7,6 +7,9 @@
 # Inherit from the proprietary version
 -include vendor/xiaomi/sky/BoardConfigVendor.mk
 
+# Firmware
+-include vendor/xiaomi/sky-firmware/config.mk
+
 DEVICE_PATH := device/xiaomi/sky
 KERNEL_PATH := $(DEVICE_PATH)-kernel
 
@@ -101,8 +104,8 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := \
     video=vfb:640x400,bpp=32,memsize=3072000 \
     disable_dma32=on \
-    swinfo.fingerprint=$(BLISS_VERSION) \
-    mtdoops.fingerprint=$(BLISS_VERSION)
+    swinfo.fingerprint=$(INFINITY_VERSION) \
+    mtdoops.fingerprint=$(INFINITY_VERSION)
 
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
