@@ -29,13 +29,4 @@ git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-23
 
 echo "Setup complete. Repositories are ready."
 
-echo "-> Checking for frameworks/native patches to apply..."
-SCRIPTS_ROOT="$(realpath device/xiaomi/sky)"
-if ! grep -q "kMaxPasses = 3" "frameworks/native/libs/renderengine/skia/filters/KawaseBlurFilter.h"; then
-  (
-    cd "frameworks/native"
-    git am -3 "$SCRIPTS_ROOT/patches/frameworks/native/0001-blur-Fast-Hybrid-Kawase-blur-for-low-end-devices.patch"
-  )
-fi
-
 echo "Completed, proceeding to lunch"
