@@ -8,7 +8,7 @@ rm -rf vendor/bcr && git clone https://github.com/xiaomi-sm4450-sky/vendor_bcr.g
 
 # Clone the kernel source
 echo "Cloning kernel repository..."
-git clone https://github.com/BlissRoms-Devices/android_kernel_xiaomi_sky.git -b waterlily device/xiaomi/sky-kernel
+git clone https://github.com/xiaomi-sm4450-sky/android_xiaomi_sky-kernel.git -b 16.0 device/xiaomi/sky-kernel
 
 # Clone the vendor source
 echo "Cloning vendor repository..."
