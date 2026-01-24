@@ -8,11 +8,11 @@ rm -rf vendor/bcr && git clone https://github.com/xiaomi-sm4450-sky/vendor_bcr.g
 
 # Clone the kernel source
 echo "Cloning kernel repository..."
-git clone https://github.com/xiaomi-sm4450-sky/android_xiaomi_sky-kernel.git -b 16.0 device/xiaomi/sky-kernel
+git clone https://github.com/xiaomi-sm4450-sky/android_xiaomi_sky-kernel.git -b 16.2 device/xiaomi/sky-kernel
 
 # Clone the vendor source
 echo "Cloning vendor repository..."
-git clone https://github.com/xiaomi-sm4450-sky/android_vendor_xiaomi_sky.git -b 16.0 vendor/xiaomi/sky
+git clone https://github.com/xiaomi-sm4450-sky/android_vendor_xiaomi_sky.git -b 16.2 vendor/xiaomi/sky
 
 # Clone the firmware source
 echo "Cloning firmware repository..."
@@ -25,7 +25,7 @@ sed -i '/version="1.0" type="device"/c\<manifest version="1.0" type="device" tar
 
 # Clone the hardware repository
 echo "Cloning hardware repository..."
-git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-23.1 hardware/xiaomi
+git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-23.2 hardware/xiaomi
 
 echo "Setup complete. Repositories are ready."
 
