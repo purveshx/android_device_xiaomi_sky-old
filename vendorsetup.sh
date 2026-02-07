@@ -8,7 +8,8 @@ git clone https://github.com/xiaomi-sm4450-sky/vendor_bcr.git vendor/bcr
 
 # Clone the kernel source
 echo "Cloning kernel repository..."
-git clone https://github.com/xiaomi-sm4450-sky/android_xiaomi_sky-kernel.git -b 16.2 device/xiaomi/sky-kernel
+git clone https://github.com/lostark13/kernel_xiaomi_sky.git -b lineage-20.0 kernel/xiaomi/sky
+git clone https://github.com/lostark13/kernel_xiaomi_sky-modules.git -b lineage-23.1 kernel/xiaomi/sm8450-modules
 
 # Clone the vendor source
 echo "Cloning vendor repository..."
