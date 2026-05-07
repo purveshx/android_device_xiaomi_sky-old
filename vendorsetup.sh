@@ -4,7 +4,7 @@ echo "Setting up repositories for Redmi 12 5G / Poco M6 Pro 5G (sky)..."
 
 # Clone BCR repository
 echo "Cloning BCR repository..."
-rm -rf vendor/bcr && git clone https://github.com/xiaomi-sm4450-sky/vendor_bcr.git vendor/bcr
+git clone https://github.com/xiaomi-sm4450-sky/vendor_bcr.git vendor/bcr
 
 # Clone the kernel source
 echo "Cloning kernel repository..."
@@ -16,7 +16,7 @@ git clone https://github.com/xiaomi-sm4450-sky/android_vendor_xiaomi_sky.git -b 
 
 # Clone the firmware source
 echo "Cloning firmware repository..."
-git clone https://codeberg.org/askthekaif/android_vendor_xiaomi_sky-firmware-af.git -b OS2.0.9.0.VMWEUXM vendor/xiaomi/sky-firmware
+git clone https://codeberg.org/askthekaif/android_vendor_xiaomi_sky-firmware.git -b OS2.0.202.0.VMWINXM vendor/xiaomi/sky-firmware
 
 # Clone the dolby repository
 echo "Cloning dolby hardware repository..."
