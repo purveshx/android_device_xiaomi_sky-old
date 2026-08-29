@@ -96,8 +96,8 @@ BOARD_KERNEL_BASE := 0x00000000
 
 BOARD_KERNEL_CMDLINE := \
     disable_dma32=on \
-    swinfo.fingerprint=$(INFINITY_VERSION) \
-    mtdoops.fingerprint=$(INFINITY_VERSION)
+    swinfo.fingerprint=$(LINEAGE_VERSION) \
+    mtdoops.fingerprint=$(LINEAGE_VERSION)
 
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
