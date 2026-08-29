@@ -23,13 +23,12 @@ $(call inherit-product, $(DEVICE_PATH)/device.mk)
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/sky/sky-vendor.mk)
 
-# Infinity-X Flags
-TARGET_BOOT_ANIMATION_RES := 1080
-INFINITY_BUILD_TYPE := OFFICIAL
-TARGET_SUPPORTS_BLUR := true
-INFINITY_MAINTAINER := "kAiF"
-USE_MOTO_CALCULATOR := true
-WITH_GAPPS := true
+# Axion Flags
+USE_RESERVED_SIZE := true
+AXION_CAMERA_REAR_INFO := 50,2
+AXION_CAMERA_FRONT_INFO := 8
+AXION_MAINTAINER := purvesh
+AXION_PROCESSOR := Snapdragon™_4_Gen_2
 
 ## Device identifier
 PRODUCT_DEVICE := sky
